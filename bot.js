@@ -363,10 +363,10 @@ function jerry_analyse_incoming_love_message ( p_message )
 
 /* Ready Event */
 client.on('ready', () => {
-  console.log('I am ready!'); /*client.user.setStatus('idle')*/
+  console.log('I am ready!'); 
   
   /* Modification du statut de Jerry en AFK */
-  client.user.setStatus('invisible');
+  /*client.user.setStatus('invisible');*/
 });
 
 /* ********************************************************************************************************************************** */
