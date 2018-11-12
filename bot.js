@@ -223,6 +223,6 @@ client.on('message', p_message => {
 	
 });
 
-
+client.login(process.env.BOT_TOKEN);
 
 
