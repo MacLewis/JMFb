@@ -1,23 +1,12 @@
 {
-
   "name": "Jerry McFly",
-
-  "description": "A funny bot",
-
-  "version": "0.0.0",
-
+  "version": "1.0.0",
+  "description": "Un bot pour ceux qui ne savent pas quoi faire !",
   "main": "bot.js",
-
-  "scripts": {
-
-    "start": "node bot.js"
-
-  },
-
+  "author": "Mac Lewis :)",
   "dependencies": {
-
-    "discord.js": "11.1.0",
-
-    "request": "2.81.0"
-
+    "discord.io": "https://github.com/woor/discord.io/tarball/gateway_v6",
+    "discord.js": "^11.4.2",
+    "opusscript": "0.0.6"
   }
+}
