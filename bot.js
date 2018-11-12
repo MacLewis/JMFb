@@ -152,7 +152,7 @@ client.on('ready', () => {
   console.log('I am ready!'); /*client.user.setStatus('idle')*/
   
   /* Modification du statut de Jerry en AFK */
-  client.user.setStatus('invisible');
+  /*client.user.setStatus('invisible');*/
 });
 
 /* ********************************************************************************************************************************** */
