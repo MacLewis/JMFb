@@ -32,9 +32,9 @@ const g_loveTable = ["jtm", "je t'aime", "❤", "😘", "love", "☺", "bébé",
 /* Validation des commandes (true pour activer la commande sinon false */
 const g_cmd_flood = false;
 const g_cmd_speak = false;
-const g_cmd_members = true;
+const g_cmd_members = false;
 const g_cmd_owner = false;
-const g_cmd_name = true;
+const g_cmd_name = false;
 
 /* ********************************************************************************************************************************** */
 
