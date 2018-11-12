@@ -2,7 +2,7 @@
   "name": "Jerry McFly",
   "version": "1.0.0",
   "description": "Un bot pour ceux qui ne savent pas quoi faire !",
-  "main": "bot.js",
+  "main": "node bot.js",
   "author": "Mac Lewis :)",
   "scripts": {
     "start": "node bot.js"
