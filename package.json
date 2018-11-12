@@ -1,0 +1,12 @@
+{
+  "name": "Jerry McFly",
+  "version": "1.0.0",
+  "description": "Un bot pour ceux qui ne savent pas quoi faire !",
+  "main": "bot.js",
+  "author": "Mac Lewis :)",
+  "dependencies": {
+    "discord.io": "https://github.com/woor/discord.io/tarball/gateway_v6",
+    "discord.js": "^11.4.2",
+    "opusscript": "0.0.6"
+  }
+}
