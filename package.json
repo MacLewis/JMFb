@@ -1,14 +1,23 @@
 {
+
   "name": "Jerry McFly",
-  "version": "1.0.0",
-  "description": "Un bot pour ceux qui ne savent pas quoi faire !",
+
+  "description": "A funny bot",
+
+  "version": "0.0.0",
+
   "main": "bot.js",
-  "author": "Mac Lewis :)",
+
   "scripts": {
+
     "start": "node bot.js"
+
   },
+
   "dependencies": {
+
     "discord.js": "11.1.0",
+
     "request": "2.81.0"
+
   }
-}
