@@ -90,7 +90,7 @@ client.on('ready', () => {
 
 /* ********************************************************************************************************************************** */
 
-client.on('message', message => { // When the message a message is executed
+client.on('message', p_message => { // When the message a message is executed
 
     /* Analyse des messages entrants */
 		jerry_analyse_incoming_love_message ( p_message );
