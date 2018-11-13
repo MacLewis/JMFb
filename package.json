@@ -1,25 +1,16 @@
 {
 
-  "name": "Test",
-
-  "description": "Test",
-
-  "version": "0.0.0",
-
+  "name": "Jerry McFly",
+  "description": "Jerry McFly Trolling",
+  "version": "1.0.0",
   "main": "bot.js",
 
   "scripts": {
-
     "start": "node bot.js"
-
   },
 
   "dependencies": {
-
-    "discord.js": "11.4.2",
-
-    "request": "2.81.0"
-
+    "discord.js": "11.4.2"
   }
 
 }
