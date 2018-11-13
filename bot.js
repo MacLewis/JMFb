@@ -25,7 +25,7 @@ const g_cmdPrefix = "!=jerry,=";
 const g_jerryChannel = "jerry-mcfly-channel";
 
 /* Déclaration d'un tableau contenant des mots exprimant l'amour */
-const g_loveTable = ["jtm", "je t'aime", "❤", "😘", "love", "☺", "bébé", "bb", "💖", "Mon amour", "😍", "😚", "aimer", "amoureux", "amour", "j'aime", "aimons", "chérie", "heart", "kiss", "bisous", "biz", "iloveyou" ];
+const g_loveTable = ["jtm", "je t'aime", "❤", "😘", "love", "☺", "bébé", "bb", "💖", "Mon amour", "😍", "😚", "aimer", "amoureux", "amour", "j'aime", "aimons", "chérie", "heart", "kiss", "bisous", "biz", "iloveyou", "oli", "zal", "femme" ];
 
 /* ********************************************************************************************************************************** */
 
