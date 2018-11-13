@@ -57,7 +57,7 @@ function jerry_analyse_incoming_love_message ( p_message )
 				p_message.delete ( );
 				
 				/* Affichage d'un message */
-				p_message.channel.send ( "Never go full retard" );
+				p_message.channel.send ( "Never go full retard !" );
 			
 				/* Arrêt de la boucle */
 				return 0;
