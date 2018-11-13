@@ -1,22 +1,29 @@
-
-/* https://discordapp.com/login?redirect_to=%2Fdevelopers%2Fapplications%2F */
-/* https://discordapp.com/oauth2/authorize?&client_id=CLIENTID&scope=bot&permissions=8 */
-
-/* ********************************************************************************************************************************** */
-
-/* Ajout du module discord.js */
 const Discord = require('discord.js');
 
-/* Création d'une instance d'un client discord */
 const client = new Discord.Client();
 
-/* ********************************************************************************************************************************** */
+ 
 
-/* Message Event */
-client.on('message', p_message => {
-  
+client.on('ready', () => { // know if our bot is online
+
+    console.log('I am ready!');
+
 });
 
-client.login(process.env.BOT_TOKEN);
+ 
 
+client.on('message', message => { // When the message a message is executed
 
+    if (message.content === 'ping') { // if that message matches ping
+
+       message.reply('pong'); // 
+
+       }
+
+});
+
+ 
+
+// THIS  MUST  BE  THIS  WAY
+
+client.login(process.env.BOT_TOKEN);//where BOT_TOKEN is the token o
