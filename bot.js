@@ -36,7 +36,7 @@ function jerry_analyse_incoming_love_message ( p_message )
 	l_love_table_length = g_loveTable.length;
 	
 	/* Si le message entrant provient de Zal ou Oli */
-	if ( ( p_message.author.id === "220592958510989313" ) || ( p_message.author.id === "261634371608379402" ) || ( p_message.author.id === "283332409070452737" ) )
+	if ( ( p_message.author.id === "220592958510989313" ) || ( p_message.author.id === "261634371608379402" ) )
 	{
 		/* Création d'une chaine de caractères */
 		l_incoming_message = p_message.content;
