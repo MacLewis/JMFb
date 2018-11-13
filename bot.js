@@ -29,6 +29,57 @@ const g_loveTable = ["jtm", "je t'aime", "❤", "😘", "love", "☺", "bébé",
 
 /* ********************************************************************************************************************************** */
 
+/* Cette fonction regarde si le message entrant est un message d'amour */
+function jerry_analyse_incoming_love_message ( p_message )
+{
+	/* Détermination de la longeur de la chaine de caractère d'amour */
+	l_love_table_length = g_loveTable.length;
+	
+	/* Si le message entrant provient de Zal ou Oli */
+	if ( ( p_message.author.username === "Gamb" ) || ( p_message.author.username === "Zal" ) || ( p_message.author.username === "Mac Lewis" ) )
+	{
+		/* Création d'une chaine de caractères */
+		l_incoming_message = p_message.content;
+				
+		/* Création de plusieurs sous-ensembles */
+		l_incoming_word = l_incoming_message.split(' ');
+		
+		/* Détermination du nombre de sous-ensemble */
+		l_incoming_word_length = l_incoming_word.length;
+		
+		/* Comparaison du mot courant avec les mots d'amour interdit */
+		for ( l_love_table_counter = 0 ; l_love_table_counter < l_love_table_length ; l_love_table_counter++ )
+		{
+			/* Si un mot d'amour interdit est présent */
+			if ( l_incoming_message.toLowerCase().search ( g_loveTable[ l_love_table_counter ] ) != -1 )
+			{
+				/* Suppression du message entrant */
+				p_message.delete ( );
+				
+				/* Affichage d'un message */
+				p_message.channel.send ( "Never go full retard" );
+			
+				/* Arrêt de la boucle */
+				return 0;
+			}
+			
+			/* Sinon */
+			else
+			{
+				/* Ne rien faire */
+			}
+		}
+	}
+	
+	/* Sinon */
+	else
+	{
+		/* Ne rien faire */
+	}
+}
+
+/* ********************************************************************************************************************************** */
+
 /* Ready Event */
 client.on('ready', () => {
   console.log('I am ready!'); /*client.user.setStatus('idle')*/
@@ -41,11 +92,8 @@ client.on('ready', () => {
 
 client.on('message', message => { // When the message a message is executed
 
-    if (message.content === 'ping') { // if that message matches ping
-
-       message.reply('pang'); // 
-
-       }
+    /* Analyse des messages entrants */
+		jerry_analyse_incoming_love_message ( p_message );
 
 });
 
