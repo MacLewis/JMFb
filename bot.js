@@ -34,7 +34,7 @@ const g_loveTable = [
     'jtm', "je t'aime", '❤', '😘', 'love', '☺', 'bébé', 'bb', '💖',
     '😍', '😚', 'aimer', 'amour', "j'aime",
     'aimons', 'cheri', 'heart', 'kiss', 'bisou', 'femme',
-    'princesse', '💕', '💞', '😻'
+    'princesse', '💕', '💞', '😻', 'biz', 'oli', 'zal', 'iloveyou'
 ];
 
 /* ********************************************************************************************************************************** */
@@ -43,7 +43,7 @@ const g_loveTable = [
 function jerry_analyse_incoming_love_message ( p_message )
 {
 	/* Si le message entrant provient de Zal ou Oli */
-	if ( /*( p_message.author.id === g_zal ) || ( p_message.author.id === g_oli ) ||*/ ( p_message.author.id === g_mac ) )
+	if ( ( p_message.author.id === g_zal ) || ( p_message.author.id === g_oli ) || ( p_message.author.id === g_mac ) )
 	{
 		/* Détermination du nombre d'élément dans le tableau */
 		l_love_table_length = g_loveTable.length;
