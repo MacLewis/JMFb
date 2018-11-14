@@ -30,7 +30,12 @@ const g_oli = "261634371608379402";
 const g_mac = "283332409070452737";
 
 /* Déclaration d'un tableau contenant des mots exprimant l'amour */
-const g_loveTable = ["/jtm/i", "/je t'aime/i", "/❤/i", "/😘/i", "/love/i", "/☺/i", "/bébé/i", "/bb/i", "/💖/i", "/Mon amour/i", "/😍/i", "/😚/i", "/aimer/i", "/amoureux/i", "/amour/i", "/j'aime/i", "/aimons/i", "/chérie/i", "/heart/i", "/kiss/i", "/bisous/i", "/biz/i", "/iloveyou/i", "/oli/i", "/zal/i", "/femme/i" ];
+const g_loveTable = [
+    'jtm', "je t'aime", '❤', '😘', 'love', '☺', 'bébé', 'bb', '💖',
+    '😍', '😚', 'aimer', 'amour', "j'aime",
+    'aimons', 'cheri', 'heart', 'kiss', 'bisou', 'femme',
+    'princesse', '💕', '💞', '😻'
+];
 
 /* ********************************************************************************************************************************** */
 
