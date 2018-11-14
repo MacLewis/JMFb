@@ -30,7 +30,7 @@ const g_oli = "261634371608379402";
 const g_mac = "283332409070452737";
 
 /* Déclaration d'un tableau contenant des mots exprimant l'amour */
-const g_loveTable = ["jtm", "je t'aime", "❤", "😘", "love", "☺", "bébé", "bb", "💖", "Mon amour", "😍", "😚", "aimer", "amoureux", "amour", "j'aime", "aimons", "chérie", "heart", "kiss", "bisous", "biz", "iloveyou", "oli", "zal", "femme" ];
+const g_loveTable = ["/jtm/i", "/je t'aime/i", "/❤/i", "/😘/i", "/love/i", "/☺/i", "/bébé/i", "/bb/i", "/💖/i", "/Mon amour/i", "/😍/i", "/😚/i", "/aimer/i", "/amoureux/i", "/amour/i", "/j'aime/i", "/aimons/i", "/chérie/i", "/heart/i", "/kiss/i", "/bisous/i", "/biz/i", "/iloveyou/i", "/oli/i", "/zal/i", "/femme/i" ];
 
 /* ********************************************************************************************************************************** */
 
@@ -49,8 +49,7 @@ function jerry_analyse_incoming_love_message ( p_message )
 		/* Comparaison du mot courant avec les mots d'amour interdit */
 		for ( l_love_table_counter = 0 ; l_love_table_counter < l_love_table_length ; l_love_table_counter++ )
 		{
-			/* Si un mot d'amour interdit est présent */
-			if ( l_incoming_message.toLowerCase().search ( g_loveTable[ l_love_table_counter ] ) != -1 )
+			if ( g_loveTable[ l_love_table_counter ].test ( l_incoming_message ) != 0 )
 			{
 				/* Suppression du message entrant */
 				p_message.delete ( );
@@ -61,7 +60,7 @@ function jerry_analyse_incoming_love_message ( p_message )
 				/* Arrêt de la boucle */
 				return 0;
 			}
-			
+
 			/* Sinon */
 			else
 			{
