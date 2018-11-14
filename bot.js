@@ -49,7 +49,9 @@ function jerry_analyse_incoming_love_message ( p_message )
 		/* Comparaison du mot courant avec les mots d'amour interdit */
 		for ( l_love_table_counter = 0 ; l_love_table_counter < l_love_table_length ; l_love_table_counter++ )
 		{
-			if ( g_loveTable[ l_love_table_counter ].test ( l_incoming_message ) != 0 )
+			regexp = new RegExp ( g_loveTable[ l_love_table_counter ], i );
+			
+			if ( regexp.test ( l_incoming_message ) != 0 )
 			{
 				/* Suppression du message entrant */
 				p_message.delete ( );
