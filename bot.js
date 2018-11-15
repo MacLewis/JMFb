@@ -34,7 +34,8 @@ const g_loveTable = [
     'jtm', "je t'aime", '❤', '😘', 'love', '☺', 'bébé', 'bb', '💖',
     '😍', '😚', 'aimer', 'amour', "j'aime",
     'aimons', 'cheri', 'heart', 'kiss', 'bisou', 'femme',
-    'princesse', '💕', '💞', '😻', 'iloveyou'
+    'princesse', '💕', '💞', '😻', 'iloveyou', 'je t’aime', 'jetaime', 
+    '♡', 'je t`aime', 'ame soeur', 'âme soeur', 'coeur'
 ];
 
 /* ********************************************************************************************************************************** */
