@@ -44,7 +44,7 @@ const g_loveTable = [
 function jerry_analyse_incoming_love_message ( p_message )
 {
 	/* Si le message entrant provient de Zal ou Oli */
-	if ( /*( p_message.author.id === g_zal ) ||*/ ( p_message.author.id === g_oli ) /*|| ( p_message.author.id === g_mac )*/ )
+	if ( 0 )
 	{
 		/* Détermination du nombre d'élément dans le tableau */
 		l_love_table_length = g_loveTable.length;
