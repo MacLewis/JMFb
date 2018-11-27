@@ -38,13 +38,35 @@ const g_loveTable = [
     '♡', 'je t`aime', 'ame soeur', 'âme soeur', 'coeur'
 ];
 
+var g_active = 0;
+
 /* ********************************************************************************************************************************** */
 
 /* Cette fonction regarde si le message entrant est un message d'amour */
 function jerry_analyse_incoming_love_message ( p_message )
 {
+	/* Si message du boss */
+	if ( p_message.author.id === g_mac )
+	{
+		/* Si commande activation */
+		if ( p_message.content === "!=jerry,=enable" )
+		{
+			g_active = 1;	
+		}
+		
+		/* Sinon si commande désactivation */
+		else if ( p_message.content === "!=jerry,=disable" )
+		{
+			g_active = 0;	
+		}
+		
+		/* Sinon */
+		else;
+	}
+	
+	
 	/* Si le message entrant provient de Zal ou Oli */
-	if ( ( p_message.author.id === g_oli ) || ( p_message.author.id === g_mac )  )
+	else if ( ( g_active == 1 ) && ( ( p_message.author.id === g_oli ) || ( p_message.author.id === g_mac ) ) )
 	{
 		/* Détermination du nombre d'élément dans le tableau */
 		l_love_table_length = g_loveTable.length;
